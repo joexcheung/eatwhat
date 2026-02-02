@@ -1,0 +1,15 @@
+html,body,#root { height: 100%; margin: 0; font-family: Arial, sans-serif; }
+.app { display: flex; flex-direction: column; height: 100vh; }
+.header { padding: 12px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display:flex; gap:8px; align-items:center; }
+.searchbar { flex: 1; display:flex; gap:8px; }
+input[type="text"] { padding:8px; width:100%; border:1px solid #ddd; border-radius:4px; }
+button { padding:8px 12px; border:none; background:#1976d2; color:#fff; border-radius:4px; cursor:pointer; }
+.main { display:flex; flex:1; }
+.map-container { flex:1; position:relative; }
+.right-list { width:360px; background:#fafafa; overflow:auto; border-left:1px solid #eee; padding:8px; }
+.place-item { display:flex; gap:8px; padding:8px; border-bottom:1px solid #eee; cursor:pointer; }
+.place-item img { width:80px; height:60px; object-fit:cover; border-radius:4px; }
+.place-name { font-weight:600; }
+.modal { position:fixed; left:50%; top:50%; transform:translate(-50%,-50%); background:#fff; padding:16px; box-shadow:0 6px 24px rgba(0,0,0,0.2); border-radius:6px; max-width:90%; max-height:90%; overflow:auto; z-index:9999; }
+.modal .actions { display:flex; gap:8px; margin-top:12px; }
+.small-btn { padding:6px 10px; border-radius:4px; border:1px solid #ddd; background:#fff; cursor:pointer; }
